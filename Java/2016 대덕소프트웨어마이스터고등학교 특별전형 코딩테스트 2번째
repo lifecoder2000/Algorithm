@@ -1,0 +1,20 @@
+package (package name);
+import java.util.Scanner;
+public class Input_String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("문자열을 입력하세요 : ");
+		String st = scan.nextLine();
+		String temp;
+		int count=0;
+		System.out.println();
+		for(int i=0; i<st.length(); i++){
+			if(i==count){temp=st.substring(0, i); System.out.println(st.substring(i, st.length())+ temp);}
+			count++;
+		}
+		scan.close();
+	}//main-end
+
+}//class-end
